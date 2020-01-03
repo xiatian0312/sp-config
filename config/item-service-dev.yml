@@ -2,7 +2,9 @@
 spring:
   application:
     name: item-service
-    
+  cloud:
+    config:
+      override-none: true  
 
   
 eureka:
@@ -13,7 +15,8 @@ eureka:
       
 ---
 
-spring:  profiles: item1
+spring:
+  profiles: item1
   
   
 server:
